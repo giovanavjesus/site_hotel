@@ -1,0 +1,117 @@
+
+@media only screen and (max-width: 480px ){
+#container{
+    width: 100%;
+    min-width: 415px;
+    height: 100vmax;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 5px;
+}  
+
+.principal{
+    background-image: url('../imagens/imagem home.png');
+}
+
+header div{
+    height: 5vmin;
+    opacity: initial;
+}
+
+
+
+#painel-menu{
+    display: block;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#painel-menu input{
+    display: block;
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    z-index: 2;
+    opacity: 0;
+}
+
+#painel-menu span{
+    display: block;
+    width: 45px;
+    height: 8px;
+    background-color: #952B2B;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.7s ease;
+}
+
+#painel-menu span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#painel-menu input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg);
+    background: white;
+}
+
+#painel-menu input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: scale(0.2.0.2);
+}
+
+#painel-menu input:checked ~ span:nth-last-child(2){
+   transform: rotate(-45deg); 
+}
+
+#painel-menu input:checked ~ ul{
+    transform: none;
+}
+ul{
+    position: absolute;
+    width: 200px;
+    height: 700px;
+    background-color: #B29636; 
+    margin: -108px 0 0 -130px;
+    padding: 105px 0 0 20px;
+    list-style-type: none;
+    transform-origin: 0 0;
+    transform: translate(100%);
+    transition:transform 0.5s;
+ }
+
+ ul li{
+     padding: 10px 0;
+     font-size: 22px;
+ }
+
+ #painel-menu a{
+     text-decoration: none;
+     color:white;
+     font-weight: bold;
+ }
+
+ /* css formulário de cadastro*/
+
+ #cadastrese{
+    color: #B29636;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+
+fieldset{
+    border: 0;
+    background-color:antiquewhite;
+}
+
+
+};
